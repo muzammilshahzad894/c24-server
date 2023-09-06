@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .title{
+            background-color: rgb(238, 187, 18);
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 5px 0;
+        }
+        .title img{
+            width: 90px !important;
+            height: 100px !important;
+        }
+        .title-dashboard{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .title-dashboard p{
+            margin: 0;
+        }
+        .title-dashboard i{
+            font-size: 22px;
+            margin-right: 5px;
+        }
+        .title-welcome{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            grid-column: span 2;
+        }
+        .title-welcome i{
+            color: #147536;
+            font-size: 16vw;
+        }
+        .wrapper{
+            margin: 0 14vw;
+            border-radius: 4px;
+            border: #ccc 1px solid;
+        }
+
+        .wrapper, .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper .title{
+            width: 100%;
+        }
+        .wrapper .title img{
+            width: 60px;
+            height: 88px;
+        }
+
+        .wrapper .content .content-information p{
+            color: rgb(31, 119, 54);
+        }
+        button{
+            background-color: rgb(31, 119, 54);
+            color: white;
+            border: rgb(31, 119, 54) 1px solid;
+            transition: .3s ease-in-out;
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover{
+            background: white;
+            color: rgb(31, 119, 54);
+            }
+        .wrapper .footer{
+            width: 100%;
+            background-color: darkblue;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .wrapper .footer .left{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 5%;
+        }
+        .wrapper .footer .left div{
+            margin-top: 5px;
+        }
+        .wrapper .footer .left p{
+            margin: 3px;
+            margin-top: 10px;
+            color: white;
+        }
+        .wrapper .footer .left a{
+            color: lightblue;
+        }
+        .wrapper .footer .left img{
+            height: 100px !important;
+            width: 100px !important;
+        }
+        .wrapper .footer .right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;  
+        }
+        .wrapper .footer .right img{
+            margin: 5px;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .wrapper .footer .right{
+            display: flex;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>interest in project</title>
+</head>
+<body>
+    <div class="wrapper" style="background-color: #ccc; ">
+        <div class="title">
+            <img src="./logo.png" alt="">
+            <div class="title-dashboard">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <p>
+                    My Curant24
+                </p>
+            </div>
+            <div class="title-welcome">
+                <h1 style="color: #147536;width: 50%;" >
+                    Good news. There is interest in your project!  
+                </h1>
+                <div style="display: flex;position:relative;">
+                    <i class="fa fa-briefcase" aria-hidden="true" style="position: absolute;font-size:5vw;top: 10% ;right: 50%;"></i>
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <i class="fa fa-search" aria-hidden="true" style="position: absolute;font-size:2.5vw;bottom: 10%;right: 10%;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content" >
+            <div class="content-information">
+                <div style="background-color: white;padding: 10px 30px;margin-top: 30px;">
+                    <p>
+                        To KPN (Willem de Vries),
+                    </p>
+                    <p>
+                        One or more freelancers have shown interest in the project below.
+                    </p>
+                    <p>
+                        Take a quick look at the interested freelancers by pressing the button below.
+                    </p>
+                </div>
+                <div class="content-info-additional" style="padding: 0 5%;">
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;">
+                        Municipality of The Hague OCW
+                    </h1>
+                    <div style="border-radius: 4px ;background-color: white; padding: 10px;font-weight: 300;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 10px;">
+                        <h2 style="color: rgb(36, 165, 207);">
+                            Administrative assistance Youth Aid
+                        </h2>
+                        <div>
+                            <div style="display: grid; grid-template-columns: 1fr 11fr;align-items: center;margin-bottom: 10px;">
+                                <i class="fa fa-map-marker" aria-hidden="true" style="display: flex;justify-content: center;"></i>
+                                <span style="display: flex;justify-content: flex-start;">
+                                    The Hague
+                                </span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 11fr;align-items: baseline;">
+                                <i class="fa fa-suitcase" aria-hidden="true" style="display: flex;justify-content: center;"></i>
+                                <span style="display: flex;justify-content: flex-start;">
+                                    Always wanted to contribute to the well-being of the youth of The hague? Are you good at working independantly? And are you used to working with privacy-sensitive data?
+                                </span>
+                                <br>
+                                <span style="display: flex;justify-content: flex-start;">
+                                    Then become an Administrative Assistant youth aid for the municipality of The Hague
+                                </span>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <button class="activate-account" style="margin-top: 15px;margin-right: 10px;">
+                                View Project
+                            </button>
+                            <button class="activate-account" style="margin-top: 15px;">
+                                View interested freelancers
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: rgb(243, 68, 68);display: flex;width:100% ;min-height: 150px; padding-bottom: 10px;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="./binoculars.png" alt="" style="width:80%">
+                </div>
+                <div style="color: white;">
+                    <h3>
+                        Start looking for a suitable freelancer! 
+                    </h3>
+                    <button class="activate-account" style="margin-top: 15px;">
+                        Looking for freelancers
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left">
+                <img src="./logo.png" alt="">
+                <div>
+                    <div>
+                        <a href="">contact</a>
+                        <a href="">Privacy</a>
+                    </div>
+                    <p>
+                        You are receiving this email because you are registered with Curant24
+                    </p>
+                    <p>
+                        The information in this e-mail may be confidential or personal and is therefore only intented for the person to whom the e-mail is addressed.
+                    </p>
+                    <p>
+                        For more information about our working method, see our disclamer.
+                    </p>
+                </div>
+                <p>
+                    © Curant24  2022 - 2285JG Rijswijk Zuid-Holland
+                </p>
+            </div>
+            <div class="right">
+                <img src="./linkedin.png" alt="">
+                <img src="./twitter.png" alt="">
+                <img src="./facebook.png" alt="">
+                <img src="./youtube.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
